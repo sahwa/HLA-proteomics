@@ -8,7 +8,7 @@ params.output = "/well/ckb/users/aey472/projects/HLA_proteomics/output"
 params.bedfile = "/well/ckb/shared/filesystem/genetic_data/GWAS_data/b38_bpca/b38_bpca_100706"
 
 // Channel for protein names
-protein_names_ch = Channel.fromPath("${params.protein_data}/olink_proteins_1.txt")
+protein_names_ch = Channel.fromPath("${params.protein_data}/olink_proteins_3000.txt")
                           .splitCsv(header: false, sep: '\t')
                           .map { row -> row[0] }
 

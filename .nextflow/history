@@ -23,3 +23,4 @@
 2024-02-13 12:19:51	-	confident_hawking	-	fcc5801b5ba1209b7e5ad833c501a576	95cef9c9-f4a5-4176-a5c3-bcffe903bfe3	nextflow run HLA_proteomics_step2.nf -stub-run
 2024-02-13 12:20:03	-	mighty_rosalind	-	fcc5801b5ba1209b7e5ad833c501a576	d1719bcb-31d9-496c-bfbe-ffac839768ee	nextflow run HLA_proteomics_step2.nf
 2024-02-13 12:24:55	-	special_kilby	-	fcc5801b5ba1209b7e5ad833c501a576	2963bb67-5d5f-4229-a9cd-254aa2c15810	nextflow run HLA_proteomics_step2.nf -profile slurm
+2024-02-13 14:14:32	-	reverent_montalcini	-	ab16a638be63af1c47148849d99d80e2	bebaf593-76e6-40e8-ba5d-620b4f4ce4c6	nextflow run HLA_proteomics_step2.nf -profile slurm
