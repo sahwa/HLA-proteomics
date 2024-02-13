@@ -1,29 +1,22 @@
 #!/usr/bin/env nextflow
 
+nextflow.enable.dsl=2
+
 params.protein_data = "/well/ckb/users/aey472/projects/HLA_proteomics/data"
 params.genetic_data = "/well/ckb/users/aey472/projects/HLA_proteomics/data/genetic_data"
 params.output = "/well/ckb/users/aey472/projects/HLA_proteomics/output"
-params.bedfile = "/well/ckb/shared/filesystem/genetic_data/GWAS_data/b38_bpca/b38_bpca_100706" 
+params.bedfile = "/well/ckb/shared/filesystem/genetic_data/GWAS_data/b38_bpca/b38_bpca_100706"
 
-protein_ids = file("${params.protein_data}/GID_proteins.txt")
-
-HLA_imputed = "/well/ckb-share/CKB_HLA_imputed_V2/combined/CKB_HLA_imputed_V2.newnames.GWAS_inds.vcf.gz"
-
-Channel
-    .fromPath("${params.protein_data}/olink_proteins_3000.txt")
-    .splitCsv(header: false, sep: '\t')
-    .map { row -> row[0] }
-    .set { proteins }
-
+// Define a process for RegenieStep1
 process RegenieStep1 {
     tag "${protein}"
     publishDir path: params.output, mode: 'copy'
 
     input:
-    val protein from proteins
+    val protein from channel1
 
     output:
-    file "fit_bin_out_${protein}" into regenie_step1_output
+    path "fit_bin_out_${protein}" into regenie_step1_output
 
     script:
     """
@@ -43,12 +36,16 @@ process RegenieStep1 {
     """
 }
 
+// Define a process for RegenieStep2
 process RegenieStep2 {
     tag "${protein}"
     publishDir path: params.output, mode: 'copy'
 
     input:
     val protein from regenie_step1_output
+
+    output:
+    path "test_bin_out_${protein}_firth" into final_output
 
     script:
     """
@@ -68,4 +65,15 @@ process RegenieStep2 {
         --pred ${params.output}/fit_bin_out_${protein}.list \\
         --out ${params.output}/test_bin_out_${protein}_firth
     """
+}
+
+// Create a channel for protein names
+protein_names_ch = Channel
+                      .fromPath("${params.protein_data}/olink_proteins_3000.txt")
+                      .splitCsv(header: false, sep: '\t')
+                      .map { row -> row[0] }
+
+// Define the workflow
+workflow {
+    protein_names_ch | RegenieStep1 | RegenieStep2
 }
