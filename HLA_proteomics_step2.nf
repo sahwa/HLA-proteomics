@@ -7,20 +7,26 @@ params.genetic_data = "/well/ckb/users/aey472/projects/HLA_proteomics/data/genet
 params.output = "/well/ckb/users/aey472/projects/HLA_proteomics/output"
 params.bedfile = "/well/ckb/shared/filesystem/genetic_data/GWAS_data/b38_bpca/b38_bpca_100706"
 
-// Define a process for RegenieStep1
+// Channel for protein names
+protein_names_ch = Channel.fromPath("${params.protein_data}/olink_proteins_1.txt")
+                          .splitCsv(header: false, sep: '\t')
+                          .map { row -> row[0] }
+
+// Process for Step 1
 process RegenieStep1 {
     tag "${protein}"
     publishDir path: params.output, mode: 'copy'
 
     input:
-    val protein from channel1
+    val protein
 
     output:
-    path "fit_bin_out_${protein}" into regenie_step1_output
+    path "fit_bin_out_${protein}", emit: regenie_step1_output
 
     script:
     """
-    mamba activate regenie
+		source /well/ckb/users/aey472/program_files/miniconda3/etc/profile.d/conda.sh
+		conda activate /gpfs3/well/ckb/users/aey472/program_files/miniconda3/envs/regenie/
     regenie \\
         --step 1 \\
         --bed ${params.bedfile} \\
@@ -36,20 +42,21 @@ process RegenieStep1 {
     """
 }
 
-// Define a process for RegenieStep2
+// Process for Step 2
 process RegenieStep2 {
     tag "${protein}"
     publishDir path: params.output, mode: 'copy'
 
     input:
-    val protein from regenie_step1_output
+    val protein
 
     output:
-    path "test_bin_out_${protein}_firth" into final_output
+    path "test_bin_out_${protein}_firth", emit: final_output
 
     script:
     """
-    mamba activate regenie
+		source /well/ckb/users/aey472/program_files/miniconda3/etc/profile.d/conda.sh
+		conda activate /gpfs3/well/ckb/users/aey472/program_files/miniconda3/envs/regenie/
     regenie \\
         --step 2 \\
         --pgen ${params.genetic_data}/CKB_HLA_imputed_V2.newnames.GWAS_inds.protein_inds \\
@@ -67,13 +74,13 @@ process RegenieStep2 {
     """
 }
 
-// Create a channel for protein names
-protein_names_ch = Channel
-                      .fromPath("${params.protein_data}/olink_proteins_3000.txt")
-                      .splitCsv(header: false, sep: '\t')
-                      .map { row -> row[0] }
-
-// Define the workflow
+// Workflow definition
 workflow {
-    protein_names_ch | RegenieStep1 | RegenieStep2
+    // Define a channel to capture the output from RegenieStep1
+    def regenie_step1_output = RegenieStep1(protein_names_ch)
+    
+    // Now pass this output as input to RegenieStep2
+    RegenieStep2(regenie_step1_output)
+
 }
+

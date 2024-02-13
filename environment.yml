@@ -1,0 +1,8 @@
+# environment.yml
+# name: regenie-env
+# channels:
+#   - conda-forge
+#     - bioconda
+#     dependencies:
+#       - regenie
+#         - mamba  # if you want to keep mamba in the environment
