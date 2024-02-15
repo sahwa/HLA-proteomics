@@ -1,301 +1,57 @@
-Feb-13 14:14:31.749 [main] DEBUG nextflow.cli.Launcher - $> nextflow run HLA_proteomics_step2.nf -profile slurm
-Feb-13 14:14:31.858 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Feb-13 14:14:31.877 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/well/ckb/users/aey472/nf/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Feb-13 14:14:31.887 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Feb-13 14:14:31.888 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Feb-13 14:14:31.891 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Feb-13 14:14:31.900 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Feb-13 14:14:31.917 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
-Feb-13 14:14:31.918 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
-Feb-13 14:14:31.940 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm`
-Feb-13 14:14:32.435 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [slurm]
-Feb-13 14:14:32.470 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Feb-13 14:14:32.485 [main] INFO  nextflow.cli.CmdRun - Launching `HLA_proteomics_step2.nf` [reverent_montalcini] DSL2 - revision: ab16a638be
-Feb-13 14:14:32.486 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Feb-13 14:14:32.486 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Feb-13 14:14:32.496 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /well/ckb/users/aey472/nf/secrets/store.json
-Feb-13 14:14:32.500 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2eeb0f9b] - activable => nextflow.secret.LocalSecretsProvider@2eeb0f9b
-Feb-13 14:14:32.553 [main] DEBUG nextflow.Session - Session UUID: bebaf593-76e6-40e8-ba5d-620b4f4ce4c6
-Feb-13 14:14:32.553 [main] DEBUG nextflow.Session - Run name: reverent_montalcini
-Feb-13 14:14:32.553 [main] DEBUG nextflow.Session - Executor pool size: 24
-Feb-13 14:14:32.560 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Feb-13 14:14:32.585 [main] DEBUG nextflow.cli.CmdRun - 
+Feb-15 15:25:18.424 [main] DEBUG nextflow.cli.Launcher - $> nextflow run HLA_proteomics_step2.nf -profile slurm
+Feb-15 15:25:18.523 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Feb-15 15:25:18.540 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/well/ckb/users/aey472/nf/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Feb-15 15:25:18.549 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-15 15:25:18.550 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-15 15:25:18.553 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Feb-15 15:25:18.562 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-15 15:25:18.578 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
+Feb-15 15:25:18.579 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
+Feb-15 15:25:18.601 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm`
+Feb-15 15:25:19.127 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [slurm]
+Feb-15 15:25:19.153 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Feb-15 15:25:19.169 [main] INFO  nextflow.cli.CmdRun - Launching `HLA_proteomics_step2.nf` [cheesy_swartz] DSL2 - revision: 47623c264a
+Feb-15 15:25:19.169 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-15 15:25:19.169 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-15 15:25:19.178 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /well/ckb/users/aey472/nf/secrets/store.json
+Feb-15 15:25:19.182 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2eeb0f9b] - activable => nextflow.secret.LocalSecretsProvider@2eeb0f9b
+Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Session UUID: f90548af-b9ca-4d6c-87ba-d93c38a3ab12
+Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Run name: cheesy_swartz
+Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Executor pool size: 24
+Feb-15 15:25:19.245 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-15 15:25:19.273 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.10.1 build 5891
   Created: 12-01-2024 22:01 UTC (22:01 BST)
   System: Linux 3.10.0-1160.105.1.el7.x86_64
   Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
   Encoding: UTF-8 (ANSI_X3.4-1968)
-  Process: 97578@rescomp2.hpc.in.bmrc.ox.ac.uk [10.136.1.242]
-  CPUs: 24 - Mem: 376.5 GB (3.1 GB) - Swap: 32 GB (1.3 GB) - Virtual threads ON
-Feb-13 14:14:32.618 [main] DEBUG nextflow.Session - Work-dir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work [gpfs]
-Feb-13 14:14:32.619 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/bin
-Feb-13 14:14:32.628 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Feb-13 14:14:32.639 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Feb-13 14:14:32.660 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Feb-13 14:14:32.669 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
-Feb-13 14:14:32.784 [main] DEBUG nextflow.Session - Session start
-Feb-13 14:14:33.161 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Feb-13 14:14:33.305 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Feb-13 14:14:33.306 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Feb-13 14:14:33.315 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
-Feb-13 14:14:33.321 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
-Feb-13 14:14:33.323 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
-Feb-13 14:14:33.324 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
-Feb-13 14:14:33.389 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Feb-13 14:14:33.390 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Feb-13 14:14:33.392 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RegenieStep1, RegenieStep2
-Feb-13 14:14:33.393 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
-Feb-13 14:14:33.398 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RegenieStep1
-Feb-13 14:14:33.399 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RegenieStep2
-Feb-13 14:14:33.399 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_72913a1c3f8a90fd: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/HLA_proteomics_step2.nf
-Feb-13 14:14:33.399 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Feb-13 14:14:33.399 [main] DEBUG nextflow.Session - Session await
-Feb-13 14:14:33.750 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pdia4) > jobId: 47234458; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2b/72be107dcc2c9b8ba9272d6a7b9604
-Feb-13 14:14:33.750 [Task submitter] INFO  nextflow.Session - [2b/72be10] Submitted process > RegenieStep1 (ol_pdia4)
-Feb-13 14:14:33.771 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_slc4a1) > jobId: 47234459; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b6/2594e076793bff0236e5fef9486140
-Feb-13 14:14:33.771 [Task submitter] INFO  nextflow.Session - [b6/2594e0] Submitted process > RegenieStep1 (ol_slc4a1)
-Feb-13 14:14:33.789 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_lamp1) > jobId: 47234460; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9e/3b5e6d05a3ed9a14f5ca4d39440ea4
-Feb-13 14:14:33.789 [Task submitter] INFO  nextflow.Session - [9e/3b5e6d] Submitted process > RegenieStep1 (ol_lamp1)
-Feb-13 14:14:33.807 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_hpse) > jobId: 47234461; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/4c/0fb749c9a38ec19ce682d5c71d8fcd
-Feb-13 14:14:33.807 [Task submitter] INFO  nextflow.Session - [4c/0fb749] Submitted process > RegenieStep1 (ol_hpse)
-Feb-13 14:14:33.825 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_tnn) > jobId: 47234462; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2d/b368accccdc4a4b9e115b3f7200b8d
-Feb-13 14:14:33.825 [Task submitter] INFO  nextflow.Session - [2d/b368ac] Submitted process > RegenieStep1 (ol_tnn)
-Feb-13 14:14:33.842 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_gm2a) > jobId: 47234463; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/82/36d7e9bfdc3cd812bde35276b4d45b
-Feb-13 14:14:33.842 [Task submitter] INFO  nextflow.Session - [82/36d7e9] Submitted process > RegenieStep1 (ol_gm2a)
-Feb-13 14:14:33.859 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cela2a) > jobId: 47234464; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c3/bf089b384b4681864f695fcb797a00
-Feb-13 14:14:33.860 [Task submitter] INFO  nextflow.Session - [c3/bf089b] Submitted process > RegenieStep1 (ol_cela2a)
-Feb-13 14:14:33.878 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_amdhd2) > jobId: 47234465; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/17/9f822cc46c88ba7187250ca417f754
-Feb-13 14:14:33.878 [Task submitter] INFO  nextflow.Session - [17/9f822c] Submitted process > RegenieStep1 (ol_amdhd2)
-Feb-13 14:14:33.895 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_klk3) > jobId: 47234466; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/16/1979447965b7af8713f38d863b7d40
-Feb-13 14:14:33.896 [Task submitter] INFO  nextflow.Session - [16/197944] Submitted process > RegenieStep1 (ol_klk3)
-Feb-13 14:14:33.912 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cytl1) > jobId: 47234467; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/bf/f8f1f03e57330793ea92b0ca6c335f
-Feb-13 14:14:33.913 [Task submitter] INFO  nextflow.Session - [bf/f8f1f0] Submitted process > RegenieStep1 (ol_cytl1)
-Feb-13 14:14:33.930 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_itgbl1) > jobId: 47234468; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c1/232f2a042e5cd95d6b49e07c1fe5d5
-Feb-13 14:14:33.930 [Task submitter] INFO  nextflow.Session - [c1/232f2a] Submitted process > RegenieStep1 (ol_itgbl1)
-Feb-13 14:14:33.947 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_psap) > jobId: 47234469; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/fb/c47178e9e9a078a0408622f4fe3f78
-Feb-13 14:14:33.947 [Task submitter] INFO  nextflow.Session - [fb/c47178] Submitted process > RegenieStep1 (ol_psap)
-Feb-13 14:14:33.963 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_bdnf) > jobId: 47234470; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/7c/3f6f786561f7a93ea914dac29a44e7
-Feb-13 14:14:33.963 [Task submitter] INFO  nextflow.Session - [7c/3f6f78] Submitted process > RegenieStep1 (ol_bdnf)
-Feb-13 14:14:33.980 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_adamtsl2) > jobId: 47234471; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/32/925665e294619944b10fb75ea38c37
-Feb-13 14:14:33.980 [Task submitter] INFO  nextflow.Session - [32/925665] Submitted process > RegenieStep1 (ol_adamtsl2)
-Feb-13 14:14:33.998 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_npc2) > jobId: 47234472; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/d5/5d5a70c6df860d0803802738d2dcb6
-Feb-13 14:14:33.998 [Task submitter] INFO  nextflow.Session - [d5/5d5a70] Submitted process > RegenieStep1 (ol_npc2)
-Feb-13 14:14:34.014 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_postn) > jobId: 47234473; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/4a/e5e73461a45a37fee7e81dd2c9aeeb
-Feb-13 14:14:34.014 [Task submitter] INFO  nextflow.Session - [4a/e5e734] Submitted process > RegenieStep1 (ol_postn)
-Feb-13 14:14:34.036 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ddt) > jobId: 47234474; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/d6/7474b8de7d396b3681ed0c5129db63
-Feb-13 14:14:34.036 [Task submitter] INFO  nextflow.Session - [d6/7474b8] Submitted process > RegenieStep1 (ol_ddt)
-Feb-13 14:14:34.052 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ceacam6) > jobId: 47234475; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/92/5db86cdcfde4b035e400fbb323c180
-Feb-13 14:14:34.053 [Task submitter] INFO  nextflow.Session - [92/5db86c] Submitted process > RegenieStep1 (ol_ceacam6)
-Feb-13 14:14:34.070 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_got1) > jobId: 47234476; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c5/5b419f48b822b86429cd58442ee6ce
-Feb-13 14:14:34.070 [Task submitter] INFO  nextflow.Session - [c5/5b419f] Submitted process > RegenieStep1 (ol_got1)
-Feb-13 14:14:34.086 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ctla4) > jobId: 47234477; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ed/3c4568ac80724c8dc16dcc8ff14ceb
-Feb-13 14:14:34.087 [Task submitter] INFO  nextflow.Session - [ed/3c4568] Submitted process > RegenieStep1 (ol_ctla4)
-Feb-13 14:14:34.103 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_lcp1) > jobId: 47234478; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/50/152d880452771ae1649fd69b49b21d
-Feb-13 14:14:34.103 [Task submitter] INFO  nextflow.Session - [50/152d88] Submitted process > RegenieStep1 (ol_lcp1)
-Feb-13 14:14:34.119 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ism2) > jobId: 47234479; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/01/6858aefe59b8d71dc41825c0b01f8f
-Feb-13 14:14:34.119 [Task submitter] INFO  nextflow.Session - [01/6858ae] Submitted process > RegenieStep1 (ol_ism2)
-Feb-13 14:14:34.136 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_asah1) > jobId: 47234480; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/72/110a4b985497fc5180cca55945c779
-Feb-13 14:14:34.136 [Task submitter] INFO  nextflow.Session - [72/110a4b] Submitted process > RegenieStep1 (ol_asah1)
-Feb-13 14:14:34.152 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_taldo1) > jobId: 47234481; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/42/a87cbf8b249428b6055a721f82f06b
-Feb-13 14:14:34.152 [Task submitter] INFO  nextflow.Session - [42/a87cbf] Submitted process > RegenieStep1 (ol_taldo1)
-Feb-13 14:14:34.171 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_notch2) > jobId: 47234482; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/e0/fa7f7d476ffe5ace5ad460bc3f8bb8
-Feb-13 14:14:34.171 [Task submitter] INFO  nextflow.Session - [e0/fa7f7d] Submitted process > RegenieStep1 (ol_notch2)
-Feb-13 14:14:34.188 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cpq) > jobId: 47234483; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/98/c09725ce1a1cc6ed981957a363d407
-Feb-13 14:14:34.188 [Task submitter] INFO  nextflow.Session - [98/c09725] Submitted process > RegenieStep1 (ol_cpq)
-Feb-13 14:14:34.204 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_myh9) > jobId: 47234484; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9c/19d3d65d4f7726d4d013450ba2b112
-Feb-13 14:14:34.204 [Task submitter] INFO  nextflow.Session - [9c/19d3d6] Submitted process > RegenieStep1 (ol_myh9)
-Feb-13 14:14:34.220 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_prg2) > jobId: 47234485; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/fc0eb4aa1805ee01d4f066ceeb1f15
-Feb-13 14:14:34.220 [Task submitter] INFO  nextflow.Session - [f3/fc0eb4] Submitted process > RegenieStep1 (ol_prg2)
-Feb-13 14:14:34.236 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_clec4m) > jobId: 47234486; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/cb/85041ef8fdb600c68f81d937b98279
-Feb-13 14:14:34.237 [Task submitter] INFO  nextflow.Session - [cb/85041e] Submitted process > RegenieStep1 (ol_clec4m)
-Feb-13 14:14:34.253 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_slurp1) > jobId: 47234487; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/3b/6e2a84a8f3289cde3f39ba5aa681d2
-Feb-13 14:14:34.254 [Task submitter] INFO  nextflow.Session - [3b/6e2a84] Submitted process > RegenieStep1 (ol_slurp1)
-Feb-13 14:14:34.269 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_chga) > jobId: 47234488; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2c/c40b0b50fa18ea5e6ecf182f6d6468
-Feb-13 14:14:34.269 [Task submitter] INFO  nextflow.Session - [2c/c40b0b] Submitted process > RegenieStep1 (ol_chga)
-Feb-13 14:14:34.284 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_igdcc4) > jobId: 47234489; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ee/9a92e2ebe27d2798bc1f394c08866e
-Feb-13 14:14:34.285 [Task submitter] INFO  nextflow.Session - [ee/9a92e2] Submitted process > RegenieStep1 (ol_igdcc4)
-Feb-13 14:14:34.299 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_stab2) > jobId: 47234490; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/7c/f0c262a37816cd541e6895dd964da0
-Feb-13 14:14:34.299 [Task submitter] INFO  nextflow.Session - [7c/f0c262] Submitted process > RegenieStep1 (ol_stab2)
-Feb-13 14:14:34.314 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ckb) > jobId: 47234491; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a7/001ec7230422494c8fcf517cd2f906
-Feb-13 14:14:34.314 [Task submitter] INFO  nextflow.Session - [a7/001ec7] Submitted process > RegenieStep1 (ol_ckb)
-Feb-13 14:14:34.330 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cilp) > jobId: 47234492; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9f/3f13226d807ecd6b44fbb08de6b3c5
-Feb-13 14:14:34.330 [Task submitter] INFO  nextflow.Session - [9f/3f1322] Submitted process > RegenieStep1 (ol_cilp)
-Feb-13 14:14:34.346 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_sbsn) > jobId: 47234493; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/48e97a2b239ab71f9e43aba2939b28
-Feb-13 14:14:34.346 [Task submitter] INFO  nextflow.Session - [f3/48e97a] Submitted process > RegenieStep1 (ol_sbsn)
-Feb-13 14:14:34.363 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cspg4) > jobId: 47234494; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c1/cc1740065fd39a4f7c200ba4677c45
-Feb-13 14:14:34.363 [Task submitter] INFO  nextflow.Session - [c1/cc1740] Submitted process > RegenieStep1 (ol_cspg4)
-Feb-13 14:14:34.380 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_col15a1) > jobId: 47234495; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/66/1529a857311bfa0c2c0dc41d83beaa
-Feb-13 14:14:34.381 [Task submitter] INFO  nextflow.Session - [66/1529a8] Submitted process > RegenieStep1 (ol_col15a1)
-Feb-13 14:14:34.396 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_fgfbp2) > jobId: 47234496; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/95/5df89e433f35f362e3e488a71cbf42
-Feb-13 14:14:34.396 [Task submitter] INFO  nextflow.Session - [95/5df89e] Submitted process > RegenieStep1 (ol_fgfbp2)
-Feb-13 14:14:34.418 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cd248) > jobId: 47234497; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9d/7cfad11bffaf9e1e7025b60ad2edf8
-Feb-13 14:14:34.418 [Task submitter] INFO  nextflow.Session - [9d/7cfad1] Submitted process > RegenieStep1 (ol_cd248)
-Feb-13 14:14:34.437 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cthrc1) > jobId: 47234498; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a8/cc65899b672547c2055abe85ed9c32
-Feb-13 14:14:34.437 [Task submitter] INFO  nextflow.Session - [a8/cc6589] Submitted process > RegenieStep1 (ol_cthrc1)
-Feb-13 14:14:34.453 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_prap1) > jobId: 47234499; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/5e/f7eb3f93e07d431dc44d42e5eb5f93
-Feb-13 14:14:34.453 [Task submitter] INFO  nextflow.Session - [5e/f7eb3f] Submitted process > RegenieStep1 (ol_prap1)
-Feb-13 14:14:34.469 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_nptx2) > jobId: 47234500; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/7c/42af06a4d68876647c0d75312ff239
-Feb-13 14:14:34.469 [Task submitter] INFO  nextflow.Session - [7c/42af06] Submitted process > RegenieStep1 (ol_nptx2)
-Feb-13 14:14:34.485 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_bglap) > jobId: 47234501; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/db/91bd10de8949f9e1fb92163225c5db
-Feb-13 14:14:34.485 [Task submitter] INFO  nextflow.Session - [db/91bd10] Submitted process > RegenieStep1 (ol_bglap)
-Feb-13 14:14:34.501 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_treh) > jobId: 47234502; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/db/3f49510000ee82b9ee928c29a50b83
-Feb-13 14:14:34.501 [Task submitter] INFO  nextflow.Session - [db/3f4951] Submitted process > RegenieStep1 (ol_treh)
-Feb-13 14:14:34.516 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_shisa5) > jobId: 47234503; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c2/1097cb03188e6291a9fa7d4f645111
-Feb-13 14:14:34.517 [Task submitter] INFO  nextflow.Session - [c2/1097cb] Submitted process > RegenieStep1 (ol_shisa5)
-Feb-13 14:14:34.532 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_twf2) > jobId: 47234504; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/3e/2f8b1ce119ac5f2b9fdf9dd1db7bf6
-Feb-13 14:14:34.532 [Task submitter] INFO  nextflow.Session - [3e/2f8b1c] Submitted process > RegenieStep1 (ol_twf2)
-Feb-13 14:14:34.548 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ppif) > jobId: 47234505; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ca/7a27a6c1858bc8cc44a045341e2c87
-Feb-13 14:14:34.548 [Task submitter] INFO  nextflow.Session - [ca/7a27a6] Submitted process > RegenieStep1 (ol_ppif)
-Feb-13 14:14:34.563 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_prg3) > jobId: 47234506; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/10/b33d71b06140ae3aa61052d014636d
-Feb-13 14:14:34.563 [Task submitter] INFO  nextflow.Session - [10/b33d71] Submitted process > RegenieStep1 (ol_prg3)
-Feb-13 14:14:34.579 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_tnfsf8) > jobId: 47234507; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/0e/6573668ab268edd85fceb905637f28
-Feb-13 14:14:34.579 [Task submitter] INFO  nextflow.Session - [0e/657366] Submitted process > RegenieStep1 (ol_tnfsf8)
-Feb-13 14:14:34.595 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ptprc) > jobId: 47234508; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/0a/ef8dc59888878104e262c9344973d3
-Feb-13 14:14:34.595 [Task submitter] INFO  nextflow.Session - [0a/ef8dc5] Submitted process > RegenieStep1 (ol_ptprc)
-Feb-13 14:14:34.610 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_col3a1) > jobId: 47234509; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/10/504dc47092d572686a6effecc9a639
-Feb-13 14:14:34.610 [Task submitter] INFO  nextflow.Session - [10/504dc4] Submitted process > RegenieStep1 (ol_col3a1)
-Feb-13 14:14:34.626 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_fbln2) > jobId: 47234510; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f5/7ead1267c8aa58b063b811407a26d7
-Feb-13 14:14:34.626 [Task submitter] INFO  nextflow.Session - [f5/7ead12] Submitted process > RegenieStep1 (ol_fbln2)
-Feb-13 14:14:34.641 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_muc2) > jobId: 47234511; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/20/f28037d21c117f1706d0291063d3c4
-Feb-13 14:14:34.641 [Task submitter] INFO  nextflow.Session - [20/f28037] Submitted process > RegenieStep1 (ol_muc2)
-Feb-13 14:14:34.656 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_lilra3) > jobId: 47234512; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f8/bd60c111b9f55bb9b0ec4f0ef73549
-Feb-13 14:14:34.656 [Task submitter] INFO  nextflow.Session - [f8/bd60c1] Submitted process > RegenieStep1 (ol_lilra3)
-Feb-13 14:14:34.671 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_lrrc59) > jobId: 47234513; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/63/3158a626b2f9f0e25b3401e0af2bf1
-Feb-13 14:14:34.671 [Task submitter] INFO  nextflow.Session - [63/3158a6] Submitted process > RegenieStep1 (ol_lrrc59)
-Feb-13 14:14:34.686 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cmc1) > jobId: 47234514; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/cc/37994af4b33152fcb75a279862d2f7
-Feb-13 14:14:34.686 [Task submitter] INFO  nextflow.Session - [cc/37994a] Submitted process > RegenieStep1 (ol_cmc1)
-Feb-13 14:14:34.701 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_serpine2) > jobId: 47234516; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/9b8b32a6fae9cf31dfac8b83d89018
-Feb-13 14:14:34.701 [Task submitter] INFO  nextflow.Session - [f3/9b8b32] Submitted process > RegenieStep1 (ol_serpine2)
-Feb-13 14:14:34.716 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_aspn) > jobId: 47234517; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/55/fa287baf3a503e3c4fdfc93e491fd4
-Feb-13 14:14:34.717 [Task submitter] INFO  nextflow.Session - [55/fa287b] Submitted process > RegenieStep1 (ol_aspn)
-Feb-13 14:14:34.734 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_l3hypdh) > jobId: 47234518; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/cf/330c5e64f9d32c685556dfb05be0f2
-Feb-13 14:14:34.734 [Task submitter] INFO  nextflow.Session - [cf/330c5e] Submitted process > RegenieStep1 (ol_l3hypdh)
-Feb-13 14:14:34.749 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_mydgf) > jobId: 47234519; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/76/242967167991b63cf956a3bdc9075c
-Feb-13 14:14:34.749 [Task submitter] INFO  nextflow.Session - [76/242967] Submitted process > RegenieStep1 (ol_mydgf)
-Feb-13 14:14:34.764 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_bcat1) > jobId: 47234520; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/8b/5ec4a630b4b71254c08086f671054b
-Feb-13 14:14:34.764 [Task submitter] INFO  nextflow.Session - [8b/5ec4a6] Submitted process > RegenieStep1 (ol_bcat1)
-Feb-13 14:14:34.779 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_bpifb2) > jobId: 47234521; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/91/392c0c3bce78c97fb15b1f396c75aa
-Feb-13 14:14:34.779 [Task submitter] INFO  nextflow.Session - [91/392c0c] Submitted process > RegenieStep1 (ol_bpifb2)
-Feb-13 14:14:34.794 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_timm10) > jobId: 47234522; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/09/455c9458be498f4b2823d221ffaac8
-Feb-13 14:14:34.794 [Task submitter] INFO  nextflow.Session - [09/455c94] Submitted process > RegenieStep1 (ol_timm10)
-Feb-13 14:14:34.809 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_rab10) > jobId: 47234523; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/17/13790d9e47e703f4c2c480aeb92d4e
-Feb-13 14:14:34.809 [Task submitter] INFO  nextflow.Session - [17/13790d] Submitted process > RegenieStep1 (ol_rab10)
-Feb-13 14:14:34.825 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_acadsb) > jobId: 47234524; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/bf/1155f256044213afcb6963d9a7ca56
-Feb-13 14:14:34.825 [Task submitter] INFO  nextflow.Session - [bf/1155f2] Submitted process > RegenieStep1 (ol_acadsb)
-Feb-13 14:14:34.841 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_adamtsl5) > jobId: 47234525; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/80/1a0bfa4d4bd43000acfe1cddff0de3
-Feb-13 14:14:34.841 [Task submitter] INFO  nextflow.Session - [80/1a0bfa] Submitted process > RegenieStep1 (ol_adamtsl5)
-Feb-13 14:14:34.856 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_rab27b) > jobId: 47234526; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c9/c11dd616814136fcdd8ff083de8d15
-Feb-13 14:14:34.856 [Task submitter] INFO  nextflow.Session - [c9/c11dd6] Submitted process > RegenieStep1 (ol_rab27b)
-Feb-13 14:14:34.871 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_tomm20) > jobId: 47234527; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/7b/265bd3c5cb7dbab984fb650ecc3a30
-Feb-13 14:14:34.872 [Task submitter] INFO  nextflow.Session - [7b/265bd3] Submitted process > RegenieStep1 (ol_tomm20)
-Feb-13 14:14:34.886 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_upb1) > jobId: 47234528; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/1b/b94c9daebff789bd2a47d97f9720b5
-Feb-13 14:14:34.886 [Task submitter] INFO  nextflow.Session - [1b/b94c9d] Submitted process > RegenieStep1 (ol_upb1)
-Feb-13 14:14:34.901 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_fabp3) > jobId: 47234529; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b8/fdd678d20446ff86dfca53d2315bbb
-Feb-13 14:14:34.901 [Task submitter] INFO  nextflow.Session - [b8/fdd678] Submitted process > RegenieStep1 (ol_fabp3)
-Feb-13 14:14:34.916 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ppm1f) > jobId: 47234530; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/19/64dd99bc367a7c6d4872e24da001c6
-Feb-13 14:14:34.916 [Task submitter] INFO  nextflow.Session - [19/64dd99] Submitted process > RegenieStep1 (ol_ppm1f)
-Feb-13 14:14:34.931 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_adgrf5) > jobId: 47234531; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/22/99a5804541af3c00b5b1bb95a766f4
-Feb-13 14:14:34.931 [Task submitter] INFO  nextflow.Session - [22/99a580] Submitted process > RegenieStep1 (ol_adgrf5)
-Feb-13 14:14:34.946 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_fam20a) > jobId: 47234532; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ae/1a73dce2fe21f6ae2d2ae0e3b2d662
-Feb-13 14:14:34.946 [Task submitter] INFO  nextflow.Session - [ae/1a73dc] Submitted process > RegenieStep1 (ol_fam20a)
-Feb-13 14:14:34.962 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_meltf) > jobId: 47234533; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/6a/b84b5b80a60a8c1fd597b4856389d3
-Feb-13 14:14:34.962 [Task submitter] INFO  nextflow.Session - [6a/b84b5b] Submitted process > RegenieStep1 (ol_meltf)
-Feb-13 14:14:34.978 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_lilra6) > jobId: 47234534; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/95/7c84a0e9f85bc2655c04d7eb41ae56
-Feb-13 14:14:34.978 [Task submitter] INFO  nextflow.Session - [95/7c84a0] Submitted process > RegenieStep1 (ol_lilra6)
-Feb-13 14:14:34.993 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_cda) > jobId: 47234535; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/dc/08de6622d8f6cc408faf5d30f83a61
-Feb-13 14:14:34.993 [Task submitter] INFO  nextflow.Session - [dc/08de66] Submitted process > RegenieStep1 (ol_cda)
-Feb-13 14:14:35.012 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pgd) > jobId: 47234536; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/fe/9b903c9a3eec9bc5765cadd1cef4af
-Feb-13 14:14:35.012 [Task submitter] INFO  nextflow.Session - [fe/9b903c] Submitted process > RegenieStep1 (ol_pgd)
-Feb-13 14:14:35.050 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ptprz1) > jobId: 47234537; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/31/dd81e15d8adaa0fc96b9bee72c6d5c
-Feb-13 14:14:35.050 [Task submitter] INFO  nextflow.Session - [31/dd81e1] Submitted process > RegenieStep1 (ol_ptprz1)
-Feb-13 14:14:35.066 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_rilpl2) > jobId: 47234538; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/24/7616ac101aa557599ed526ffd38164
-Feb-13 14:14:35.077 [Task submitter] INFO  nextflow.Session - [24/7616ac] Submitted process > RegenieStep1 (ol_rilpl2)
-Feb-13 14:14:35.093 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_sgsh) > jobId: 47234539; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/70/b2699aadf3d197a23493e3177b8f0e
-Feb-13 14:14:35.093 [Task submitter] INFO  nextflow.Session - [70/b2699a] Submitted process > RegenieStep1 (ol_sgsh)
-Feb-13 14:14:35.109 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_gmfg) > jobId: 47234540; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/12/ad9b443913670efda68b0dc0939e99
-Feb-13 14:14:35.109 [Task submitter] INFO  nextflow.Session - [12/ad9b44] Submitted process > RegenieStep1 (ol_gmfg)
-Feb-13 14:14:35.124 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_sytl4) > jobId: 47234541; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/30/ef8ff28626590a28ab8ed2eb8988ad
-Feb-13 14:14:35.124 [Task submitter] INFO  nextflow.Session - [30/ef8ff2] Submitted process > RegenieStep1 (ol_sytl4)
-Feb-13 14:14:35.140 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_tpk1) > jobId: 47234542; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b1/ba0fdb262336797b67d5b71d01d32f
-Feb-13 14:14:35.140 [Task submitter] INFO  nextflow.Session - [b1/ba0fdb] Submitted process > RegenieStep1 (ol_tpk1)
-Feb-13 14:14:35.155 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_heph) > jobId: 47234543; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f6/95fc4a0e52ef89f45322fb76e3b8e2
-Feb-13 14:14:35.155 [Task submitter] INFO  nextflow.Session - [f6/95fc4a] Submitted process > RegenieStep1 (ol_heph)
-Feb-13 14:14:35.171 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_nit2) > jobId: 47234544; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/05/3d6c6671e60e3e0ede56625b66bbf3
-Feb-13 14:14:35.171 [Task submitter] INFO  nextflow.Session - [05/3d6c66] Submitted process > RegenieStep1 (ol_nit2)
-Feb-13 14:14:35.186 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_eef1d) > jobId: 47234545; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/94/b85ec310f8577ce29e83d3d8245106
-Feb-13 14:14:35.187 [Task submitter] INFO  nextflow.Session - [94/b85ec3] Submitted process > RegenieStep1 (ol_eef1d)
-Feb-13 14:14:35.204 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_vit) > jobId: 47234546; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/8a/7203ac76666ad632310a029e0a457f
-Feb-13 14:14:35.204 [Task submitter] INFO  nextflow.Session - [8a/7203ac] Submitted process > RegenieStep1 (ol_vit)
-Feb-13 14:14:35.220 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_scrg1) > jobId: 47234547; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/65/899750da82ba1acdf3d1ed79b8cffb
-Feb-13 14:14:35.221 [Task submitter] INFO  nextflow.Session - [65/899750] Submitted process > RegenieStep1 (ol_scrg1)
-Feb-13 14:14:35.241 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_fcamr) > jobId: 47234548; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/7b/b7c0334c5c39c5c7b0fd072e2408cb
-Feb-13 14:14:35.241 [Task submitter] INFO  nextflow.Session - [7b/b7c033] Submitted process > RegenieStep1 (ol_fcamr)
-Feb-13 14:14:35.274 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_sarg) > jobId: 47234549; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/39/28c3d7f239db1c3e90c7063e93bd3e
-Feb-13 14:14:35.274 [Task submitter] INFO  nextflow.Session - [39/28c3d7] Submitted process > RegenieStep1 (ol_sarg)
-Feb-13 14:14:35.289 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_igsf9) > jobId: 47234550; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/54/9fc33b45f9fd0625f70bc4d0ab7378
-Feb-13 14:14:35.289 [Task submitter] INFO  nextflow.Session - [54/9fc33b] Submitted process > RegenieStep1 (ol_igsf9)
-Feb-13 14:14:35.304 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_npl) > jobId: 47234551; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/5d/ad98ec2b1396467e4f472d8a58b648
-Feb-13 14:14:35.304 [Task submitter] INFO  nextflow.Session - [5d/ad98ec] Submitted process > RegenieStep1 (ol_npl)
-Feb-13 14:14:35.322 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pkd1) > jobId: 47234552; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/30/44ff7b84ed0fd4bd0d05bb437cdda4
-Feb-13 14:14:35.322 [Task submitter] INFO  nextflow.Session - [30/44ff7b] Submitted process > RegenieStep1 (ol_pkd1)
-Feb-13 14:14:35.337 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_nt5c) > jobId: 47234553; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/92/c428d3f02c27fb56762572d9b27114
-Feb-13 14:14:35.337 [Task submitter] INFO  nextflow.Session - [92/c428d3] Submitted process > RegenieStep1 (ol_nt5c)
-Feb-13 14:14:35.353 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_chmp6) > jobId: 47234554; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/20/b67211db1c502d8a25f71a46ad41ec
-Feb-13 14:14:35.353 [Task submitter] INFO  nextflow.Session - [20/b67211] Submitted process > RegenieStep1 (ol_chmp6)
-Feb-13 14:14:35.407 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_tctn3) > jobId: 47234555; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/72/46e08e64d303d4e7b9c395120b7237
-Feb-13 14:14:35.407 [Task submitter] INFO  nextflow.Session - [72/46e08e] Submitted process > RegenieStep1 (ol_tctn3)
-Feb-13 14:14:35.425 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_rab11fip3) > jobId: 47234556; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/89/1158a2cd3bf3aad653febb6465cac9
-Feb-13 14:14:35.425 [Task submitter] INFO  nextflow.Session - [89/1158a2] Submitted process > RegenieStep1 (ol_rab11fip3)
-Feb-13 14:14:35.443 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_ptprb) > jobId: 47234557; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b7/a14dbe19ffa42662f4bde851e30dc5
-Feb-13 14:14:35.443 [Task submitter] INFO  nextflow.Session - [b7/a14dbe] Submitted process > RegenieStep1 (ol_ptprb)
-Feb-13 14:14:35.459 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pdap1) > jobId: 47234558; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a2/60dd02d5253b570026683622f283ae
-Feb-13 14:14:35.459 [Task submitter] INFO  nextflow.Session - [a2/60dd02] Submitted process > RegenieStep1 (ol_pdap1)
-Feb-13 14:19:36.000 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor slurm > tasks in the submission queue: 2830 -- tasks to be submitted are shown below
-~> TaskHandler[jobId: null; id: 100; name: RegenieStep1 (ol_cpxm2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c4/59058600be63021072a1b054bda920 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 101; name: RegenieStep1 (ol_ube2l6); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ca/03d98a049376991628641a8b85dc52 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 102; name: RegenieStep1 (ol_lect2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c8/3bef84d558a035bee3283d11bb023c started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 103; name: RegenieStep1 (ol_crybb1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/a8cbd309c458353782a3096e2b2c22 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 104; name: RegenieStep1 (ol_timp2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/0e9bc6d594a9e525d5d04a2191c6b3 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 105; name: RegenieStep1 (ol_cox6b1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/24/5b3973d9d1d65a774d2e7efcfbeb21 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 106; name: RegenieStep1 (ol_coch); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/39/68f7c759e11e1282a12560b8cf9e24 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 107; name: RegenieStep1 (ol_ggct); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/d7/7acedc58b355b4ca503a2469127830 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 108; name: RegenieStep1 (ol_get3); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/10/2f97947863cb3101aae06dc5b2a95e started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 109; name: RegenieStep1 (ol_ehbp1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/87/35809a38ea3425067a202aa3a421f8 started: -; exited: -; ]
-.. remaining tasks omitted.
-Feb-13 14:19:38.357 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 100 -- submitted tasks are shown below
-~> TaskHandler[jobId: 47234458; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2b/72be107dcc2c9b8ba9272d6a7b9604 started: 1707833678329; exited: -; ]
-~> TaskHandler[jobId: 47234459; id: 6; name: RegenieStep1 (ol_slc4a1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b6/2594e076793bff0236e5fef9486140 started: 1707833678351; exited: -; ]
-~> TaskHandler[jobId: 47234460; id: 16; name: RegenieStep1 (ol_lamp1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9e/3b5e6d05a3ed9a14f5ca4d39440ea4 started: 1707833678356; exited: -; ]
-~> TaskHandler[jobId: 47234461; id: 23; name: RegenieStep1 (ol_hpse); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/4c/0fb749c9a38ec19ce682d5c71d8fcd started: 1707833678360; exited: -; ]
-~> TaskHandler[jobId: 47234462; id: 20; name: RegenieStep1 (ol_tnn); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2d/b368accccdc4a4b9e115b3f7200b8d started: 1707833678364; exited: -; ]
-~> TaskHandler[jobId: 47234463; id: 19; name: RegenieStep1 (ol_gm2a); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/82/36d7e9bfdc3cd812bde35276b4d45b started: 1707833678369; exited: -; ]
-~> TaskHandler[jobId: 47234464; id: 21; name: RegenieStep1 (ol_cela2a); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c3/bf089b384b4681864f695fcb797a00 started: 1707833678372; exited: -; ]
-~> TaskHandler[jobId: 47234465; id: 8; name: RegenieStep1 (ol_amdhd2); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/17/9f822cc46c88ba7187250ca417f754 started: 1707833678380; exited: -; ]
-~> TaskHandler[jobId: 47234466; id: 10; name: RegenieStep1 (ol_klk3); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/16/1979447965b7af8713f38d863b7d40 started: 1707833678383; exited: -; ]
-~> TaskHandler[jobId: 47234467; id: 2; name: RegenieStep1 (ol_cytl1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/bf/f8f1f03e57330793ea92b0ca6c335f started: 1707833678386; exited: -; ]
-.. remaining tasks omitted.
-Feb-13 14:24:36.212 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor slurm > tasks in the submission queue: 2830 -- tasks to be submitted are shown below
-~> TaskHandler[jobId: null; id: 100; name: RegenieStep1 (ol_cpxm2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c4/59058600be63021072a1b054bda920 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 101; name: RegenieStep1 (ol_ube2l6); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/ca/03d98a049376991628641a8b85dc52 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 102; name: RegenieStep1 (ol_lect2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c8/3bef84d558a035bee3283d11bb023c started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 103; name: RegenieStep1 (ol_crybb1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/a8cbd309c458353782a3096e2b2c22 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 104; name: RegenieStep1 (ol_timp2); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/0e9bc6d594a9e525d5d04a2191c6b3 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 105; name: RegenieStep1 (ol_cox6b1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/24/5b3973d9d1d65a774d2e7efcfbeb21 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 106; name: RegenieStep1 (ol_coch); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/39/68f7c759e11e1282a12560b8cf9e24 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 107; name: RegenieStep1 (ol_ggct); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/d7/7acedc58b355b4ca503a2469127830 started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 108; name: RegenieStep1 (ol_get3); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/10/2f97947863cb3101aae06dc5b2a95e started: -; exited: -; ]
-~> TaskHandler[jobId: null; id: 109; name: RegenieStep1 (ol_ehbp1); status: NEW; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/87/35809a38ea3425067a202aa3a421f8 started: -; exited: -; ]
-.. remaining tasks omitted.
-Feb-13 14:24:38.382 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 100 -- submitted tasks are shown below
-~> TaskHandler[jobId: 47234458; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2b/72be107dcc2c9b8ba9272d6a7b9604 started: 1707833678329; exited: -; ]
-~> TaskHandler[jobId: 47234459; id: 6; name: RegenieStep1 (ol_slc4a1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/b6/2594e076793bff0236e5fef9486140 started: 1707833678351; exited: -; ]
-~> TaskHandler[jobId: 47234460; id: 16; name: RegenieStep1 (ol_lamp1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/9e/3b5e6d05a3ed9a14f5ca4d39440ea4 started: 1707833678356; exited: -; ]
-~> TaskHandler[jobId: 47234461; id: 23; name: RegenieStep1 (ol_hpse); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/4c/0fb749c9a38ec19ce682d5c71d8fcd started: 1707833678360; exited: -; ]
-~> TaskHandler[jobId: 47234462; id: 20; name: RegenieStep1 (ol_tnn); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/2d/b368accccdc4a4b9e115b3f7200b8d started: 1707833678364; exited: -; ]
-~> TaskHandler[jobId: 47234463; id: 19; name: RegenieStep1 (ol_gm2a); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/82/36d7e9bfdc3cd812bde35276b4d45b started: 1707833678369; exited: -; ]
-~> TaskHandler[jobId: 47234464; id: 21; name: RegenieStep1 (ol_cela2a); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/c3/bf089b384b4681864f695fcb797a00 started: 1707833678372; exited: -; ]
-~> TaskHandler[jobId: 47234465; id: 8; name: RegenieStep1 (ol_amdhd2); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/17/9f822cc46c88ba7187250ca417f754 started: 1707833678380; exited: -; ]
-~> TaskHandler[jobId: 47234466; id: 10; name: RegenieStep1 (ol_klk3); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/16/1979447965b7af8713f38d863b7d40 started: 1707833678383; exited: -; ]
-~> TaskHandler[jobId: 47234467; id: 2; name: RegenieStep1 (ol_cytl1); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/bf/f8f1f03e57330793ea92b0ca6c335f started: 1707833678386; exited: -; ]
-.. remaining tasks omitted.
+  Process: 41546@rescomp2.hpc.in.bmrc.ox.ac.uk [10.136.1.242]
+  CPUs: 24 - Mem: 376.5 GB (299.2 GB) - Swap: 32 GB (4.4 GB) - Virtual threads ON
+Feb-15 15:25:19.296 [main] DEBUG nextflow.Session - Work-dir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work [gpfs]
+Feb-15 15:25:19.296 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/bin
+Feb-15 15:25:19.306 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-15 15:25:19.318 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Feb-15 15:25:19.339 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-15 15:25:19.347 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Feb-15 15:25:19.517 [main] DEBUG nextflow.Session - Session start
+Feb-15 15:25:19.904 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-15 15:25:20.016 [main] INFO  nextflow.script.BaseScript - Running step 1
+Feb-15 15:25:20.056 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Feb-15 15:25:20.058 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Feb-15 15:25:20.067 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Feb-15 15:25:20.075 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Feb-15 15:25:20.076 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Feb-15 15:25:20.078 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Feb-15 15:25:20.143 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RegenieStep1, RegenieStep2
+Feb-15 15:25:20.143 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Feb-15 15:25:20.149 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RegenieStep1
+Feb-15 15:25:20.150 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_c6a94990e1e4a5bc: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/HLA_proteomics_step2.nf
+Feb-15 15:25:20.150 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Feb-15 15:25:20.150 [main] DEBUG nextflow.Session - Session await
+Feb-15 15:25:20.381 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pdia4) > jobId: 47544390; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9
+Feb-15 15:25:20.382 [Task submitter] INFO  nextflow.Session - [f3/cf176d] Submitted process > RegenieStep1 (ol_pdia4)
+Feb-15 15:30:25.099 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 47544390; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9 started: 1708010730084; exited: -; ]
+Feb-15 15:35:25.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 47544390; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9 started: 1708010730084; exited: -; ]
