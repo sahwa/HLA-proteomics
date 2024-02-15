@@ -32,10 +32,16 @@ process RegenieStep1 {
             --phenoCol ${protein} \\
             --covarColList gwas_array_type,national_pc01,national_pc02,national_pc03,national_pc04,national_pc05,national_pc06,national_pc07,national_pc08,national_pc09,national_pc10,national_pc11 \\
             --catCovarList gwas_array_type \\
-            --bsize 100 \\
+            --bsize 1000 \\
             --qt \\
+            --threads 4 \\
+            --lowmem \\
+            --lowmem-prefix ${params.output}/tmp_${protein} \\
             --force-qt \\
+            --loocv \\
+            --cv 10 \\
             --out ${params.output}/fit_bin_out_${protein}
+
     } 
     """
 }
@@ -72,20 +78,6 @@ process RegenieStep2 {
 workflow {
     // Define a single protein name
     def protein = protein_names_ch.first()
-
-    // Define the log file path
-    def logfile = "${params.output}/fit_bin_out_${protein}.log"
-
-    // Check conditions for running steps 1 and 2
-    if (!file(logfile).exists() || (file(logfile).exists() && !file(logfile).text.contains("List of blup files written to"))) {
-        // Run step 1 if the log file doesn't exist or doesn't contain "pascal"
-        println "Running step 1"
-        RegenieStep1(protein)
-    }
-
-    if (file(logfile).exists() && file(logfile).text.contains("List of blup files written to")) {
-        // Run step 2 if the log file exists and contains "pascal"
-        println "Logfile exists, running step 2"
-        RegenieStep2(protein)
-    }
+		RegenieStep1(protein)
+		RegenieStep2(protein)
 }

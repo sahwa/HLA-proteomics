@@ -1,57 +1,54 @@
-Feb-15 15:25:18.424 [main] DEBUG nextflow.cli.Launcher - $> nextflow run HLA_proteomics_step2.nf -profile slurm
-Feb-15 15:25:18.523 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Feb-15 15:25:18.540 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/well/ckb/users/aey472/nf/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Feb-15 15:25:18.549 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Feb-15 15:25:18.550 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Feb-15 15:25:18.553 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Feb-15 15:25:18.562 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Feb-15 15:25:18.578 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
-Feb-15 15:25:18.579 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
-Feb-15 15:25:18.601 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm`
-Feb-15 15:25:19.127 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [slurm]
-Feb-15 15:25:19.153 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Feb-15 15:25:19.169 [main] INFO  nextflow.cli.CmdRun - Launching `HLA_proteomics_step2.nf` [cheesy_swartz] DSL2 - revision: 47623c264a
-Feb-15 15:25:19.169 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Feb-15 15:25:19.169 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Feb-15 15:25:19.178 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /well/ckb/users/aey472/nf/secrets/store.json
-Feb-15 15:25:19.182 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2eeb0f9b] - activable => nextflow.secret.LocalSecretsProvider@2eeb0f9b
-Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Session UUID: f90548af-b9ca-4d6c-87ba-d93c38a3ab12
-Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Run name: cheesy_swartz
-Feb-15 15:25:19.237 [main] DEBUG nextflow.Session - Executor pool size: 24
-Feb-15 15:25:19.245 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Feb-15 15:25:19.273 [main] DEBUG nextflow.cli.CmdRun - 
+Feb-15 17:30:36.950 [main] DEBUG nextflow.cli.Launcher - $> nextflow run HLA_proteomics_step2.nf -profile slurm
+Feb-15 17:30:37.053 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Feb-15 17:30:37.072 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/well/ckb/users/aey472/nf/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Feb-15 17:30:37.082 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-15 17:30:37.083 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-15 17:30:37.086 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Feb-15 17:30:37.095 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-15 17:30:37.112 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
+Feb-15 17:30:37.113 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/nextflow.config
+Feb-15 17:30:37.136 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm`
+Feb-15 17:30:37.658 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [slurm]
+Feb-15 17:30:37.684 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Feb-15 17:30:37.700 [main] INFO  nextflow.cli.CmdRun - Launching `HLA_proteomics_step2.nf` [backstabbing_sammet] DSL2 - revision: 1e25ed3f99
+Feb-15 17:30:37.700 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-15 17:30:37.701 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-15 17:30:37.710 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /well/ckb/users/aey472/nf/secrets/store.json
+Feb-15 17:30:37.714 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6325f352] - activable => nextflow.secret.LocalSecretsProvider@6325f352
+Feb-15 17:30:37.769 [main] DEBUG nextflow.Session - Session UUID: f4332e50-92e1-4ecc-b7de-1659a6344b4c
+Feb-15 17:30:37.769 [main] DEBUG nextflow.Session - Run name: backstabbing_sammet
+Feb-15 17:30:37.770 [main] DEBUG nextflow.Session - Executor pool size: 24
+Feb-15 17:30:37.776 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-15 17:30:37.802 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.10.1 build 5891
   Created: 12-01-2024 22:01 UTC (22:01 BST)
   System: Linux 3.10.0-1160.105.1.el7.x86_64
   Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
   Encoding: UTF-8 (ANSI_X3.4-1968)
-  Process: 41546@rescomp2.hpc.in.bmrc.ox.ac.uk [10.136.1.242]
-  CPUs: 24 - Mem: 376.5 GB (299.2 GB) - Swap: 32 GB (4.4 GB) - Virtual threads ON
-Feb-15 15:25:19.296 [main] DEBUG nextflow.Session - Work-dir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work [gpfs]
-Feb-15 15:25:19.296 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/bin
-Feb-15 15:25:19.306 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Feb-15 15:25:19.318 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Feb-15 15:25:19.339 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Feb-15 15:25:19.347 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
-Feb-15 15:25:19.517 [main] DEBUG nextflow.Session - Session start
-Feb-15 15:25:19.904 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Feb-15 15:25:20.016 [main] INFO  nextflow.script.BaseScript - Running step 1
-Feb-15 15:25:20.056 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
-Feb-15 15:25:20.058 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
-Feb-15 15:25:20.067 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
-Feb-15 15:25:20.075 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
-Feb-15 15:25:20.076 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
-Feb-15 15:25:20.078 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
-Feb-15 15:25:20.143 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RegenieStep1, RegenieStep2
-Feb-15 15:25:20.143 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Feb-15 15:25:20.149 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RegenieStep1
-Feb-15 15:25:20.150 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_c6a94990e1e4a5bc: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/HLA_proteomics_step2.nf
-Feb-15 15:25:20.150 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Feb-15 15:25:20.150 [main] DEBUG nextflow.Session - Session await
-Feb-15 15:25:20.381 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pdia4) > jobId: 47544390; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9
-Feb-15 15:25:20.382 [Task submitter] INFO  nextflow.Session - [f3/cf176d] Submitted process > RegenieStep1 (ol_pdia4)
-Feb-15 15:30:25.099 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
-~> TaskHandler[jobId: 47544390; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9 started: 1708010730084; exited: -; ]
-Feb-15 15:35:25.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
-~> TaskHandler[jobId: 47544390; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/f3/cf176d2f2043eff97f9982590ccbe9 started: 1708010730084; exited: -; ]
+  Process: 142392@rescomp2.hpc.in.bmrc.ox.ac.uk [10.136.1.242]
+  CPUs: 24 - Mem: 376.5 GB (303.9 GB) - Swap: 32 GB (4.4 GB) - Virtual threads ON
+Feb-15 17:30:37.824 [main] DEBUG nextflow.Session - Work-dir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work [gpfs]
+Feb-15 17:30:37.824 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/bin
+Feb-15 17:30:37.834 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-15 17:30:37.845 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Feb-15 17:30:37.866 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-15 17:30:37.874 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Feb-15 17:30:37.978 [main] DEBUG nextflow.Session - Session start
+Feb-15 17:30:38.266 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-15 17:30:38.394 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Feb-15 17:30:38.394 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Feb-15 17:30:38.403 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Feb-15 17:30:38.409 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Feb-15 17:30:38.410 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Feb-15 17:30:38.412 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Feb-15 17:30:38.468 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RegenieStep1, RegenieStep2
+Feb-15 17:30:38.469 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Feb-15 17:30:38.474 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RegenieStep1
+Feb-15 17:30:38.474 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_110bc479e0d9cc9a: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/HLA_proteomics_step2.nf
+Feb-15 17:30:38.474 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Feb-15 17:30:38.474 [main] DEBUG nextflow.Session - Session await
+Feb-15 17:30:38.675 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process RegenieStep1 (ol_pdia4) > jobId: 47560985; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/0e74168ff405d3b6ddc93111db7362
+Feb-15 17:30:38.676 [Task submitter] INFO  nextflow.Session - [a3/0e7416] Submitted process > RegenieStep1 (ol_pdia4)
+Feb-15 17:35:43.441 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 47560985; id: 1; name: RegenieStep1 (ol_pdia4); status: RUNNING; exit: -; error: -; workDir: /gpfs3/well/ckb/users/aey472/projects/HLA_proteomics/scripts/work/a3/0e74168ff405d3b6ddc93111db7362 started: 1708018243417; exited: -; ]
